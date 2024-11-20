@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #b6d0fa !important;
+    overflow: hidden;
+}
+
+    /* Главная карта */
+#layer-control, #data-display {
+    background-color: white;
+}
+
+details {
+
+}
+
+    /* Панель управление слоями */
+#layer-control {
+    padding: 0;
+    cursor: pointer;
+}
+details[open] summary + * {
+    animation: slide .3s ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#layer-control ul {
+    margin-left: 10%;
+}
+#layer-control li {
+    margin-top: 2%;
+}
+
+summary {
+    background-color: #aaaaaa;
+    cursor: pointer;
+    padding: 0.7em;
+    border-radius: 10px;
+}
+
+#layer-control details[open] .listUnstyled {
+    max-height: 500px; /* Установите максимальную высоту для открытого списка */
+}
+
+.listUnstyled {
+    max-height: 0; /* Начальная высота списка при закрытом состоянии */
+    overflow: hidden; /* Скрывать лишнее содержимое */
+    transition: max-height 0.3s ease; /* Плавный переход для max-height */
+}
+    /* Панель управления атри */
+
+.header {
+    width: 100%;
+    padding: 1.5em 1.5em 0.8em 1.5em;
+    background-color: white;
+    margin-bottom: 0.5%;
+}
+
+    /* Упревлени атрибутами */

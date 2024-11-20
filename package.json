@@ -1,0 +1,29 @@
+{
+    "name": "getfeatureinfo-tile",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@popperjs/core": "^2.11.6",
+        "axios": "^1.6.4",
+        "bootstrap": "^5.2.3",
+        "echarts": "^5.5.1",
+        "laravel-vite-plugin": "^1.0",
+        "sass": "^1.56.1",
+        "vite": "^5.0",
+        "vite-plugin-inspect": "^0.8.4"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.4.20",
+        "bootstrap-icons": "^1.11.3",
+        "ol": "10.2.1",
+        "ol-popup": "^5.1.1",
+        "openlayers": "^4.6.5",
+        "postcss": "^8.4.48",
+        "swiper": "^11.1.4",
+        "tailwindcss": "^3.4.14"
+    }
+}

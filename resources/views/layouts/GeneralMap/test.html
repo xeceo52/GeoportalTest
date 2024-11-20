@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    details {
+        transition: all 0.3s ease; /* Плавный переход для всех изменений */
+    }
+
+    summary {
+        cursor: pointer; /* Указатель для интерактивных элементов */
+    }
+
+    .list-unstyled {
+        max-height: 0; /* Начальная высота списка при закрытом состоянии */
+        overflow: hidden; /* Скрывать лишнее содержимое */
+        transition: max-height 0.3s ease; /* Плавный переход для max-height */
+    }
+
+    details[open] .list-unstyled {
+        max-height: 500px; /* Установите максимальную высоту для открытого списка */
+    }
+
+    .layer-icon {
+        width: 20px; /* Задайте размер иконок */
+        height: auto;
+    }
+</style>
+
+<details open>
+    <summary>
+        <input type="checkbox" id="territory-group" checked>
+        <label for="territory-group">Территория объекта</label>
+    </summary>
+    <ul class="list-unstyled">
+        <li>
+            <input type="checkbox" id="GeoPortal:Регионы_добычи" checked>
+            <label for="GeoPortal:Регионы_добычи" class="d-flex align-items-center">
+                <img src="" alt="Стиль 1" class="layer-icon me-2">Регионы добычи
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" id="GeoPortal:Районы_РБ" checked>
+            <label for="GeoPortal:Районы_РБ" class="d-flex align-items-center">
+                <img src="" alt="Стиль 2" class="layer-icon me-2">Районы РБ
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" id="GeoPortal:Населенные_пункты" checked>
+            <label for="GeoPortal:Населенные_пункты" class="d-flex align-items-center">
+                <img src="" alt="Стиль 3" class="layer-icon me-2">Населенные пункты
+            </label>
+        </li>
+    </ul>
+</details>
+
+<details open>
+    <summary>
+        <input type="checkbox" id="objects-group" checked>
+        <label for="objects-group">Объекты</label>
+    </summary>
+    <ul class="list-unstyled">
+        <li>
+            <input type="checkbox" id="GeoPortal:Поиск_источников" checked>
+            <label for="GeoPortal:Поиск_источников" class="d-flex align-items-center">
+                <img src="" alt="Стиль 4" class="layer-icon me-2">Прочие источники
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" id="GeoPortal:Скважины" checked>
+            <label for="GeoPortal:Скважины" class="d-flex align-items-center">
+                <img src="" alt="Стиль 5" class="layer-icon me-2">Скважины
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" id="GeoPortal:Факелы" checked>
+            <label for="GeoPortal:Факелы" class="d-flex align-items-center">
+                <img src="" alt="Стиль 6" class="layer-icon me-2">Факелы
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" id="GeoPortal:Цеха" checked>
+            <label for="GeoPortal:Цеха" class="d-flex align-items-center">
+                <img src="" alt="Стиль 7" class="layer-icon me-2">Цеха
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" id="GeoPortal:Дренажные_емкости" checked>
+            <label for="GeoPortal:Дренажные_емкости" class="d-flex align-items-center">
+                <img src="" alt="Стиль 8" class="layer-icon me-2">Дренажные емкости
+            </label>
+        </li>
+    </ul>
+</details>
+</body>
+</html>
